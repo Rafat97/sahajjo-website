@@ -1,0 +1,12 @@
+{
+    "name": "root10/project",
+    "description": "Test composer",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+		
+    },
+    "autoload": {
+       
+    }
+}

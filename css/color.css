@@ -1,0 +1,66 @@
+.color1, .color1-hover:hover{
+color:#fff;
+}
+.color2, .color2-hover:hover{
+
+color:#000;
+}
+
+.color3, .color3:hover{
+color:#2F80ED;
+
+}
+.color2-secondary,.color2-secondary-hover:hover{
+color: #434343;
+}
+
+.color3-secondary,.color3-secondary-hover:hover{
+color :#56CCF2 ;
+
+}
+.color1-bg{
+background-color:#fff;
+}
+.color2-bg{
+background-color:#000;
+}
+.color3-bg{
+background-color:#2F80ED;
+}
+.color1-border{
+	border-color: rgba(255,255,255,0.9) !important;
+}
+.color3-secondary-bg{
+background-color:#56CCF2;
+}
+.transparent-bg-hover:hover{
+background-color:transparent;
+}
+
+.navbar-bg{
+	background: black;
+}
+.color1-bg-opacity5{
+background-color: rgba(0,0,0,0.5);
+}
+.bw-bg{
+ background: linear-gradient(90deg, #000 50%, #fff 50%);
+}
+.wb-bg{
+ background: linear-gradient(90deg, #FFFB 50%, #000 50%);
+}
+.color1-color3-bg{
+	background: linear-gradient(90deg, #fff 50%, #2F80ED 50%);
+}
+@media(max-width: 767px){
+	.wb-bg{
+ background: linear-gradient(180deg, #FFFB 50%, #000 50%);
+}
+
+.bw-bg{
+ background: linear-gradient(180deg, #000 50%, #fff 50%);
+}
+.color1-color3-bg{
+	background: linear-gradient(180deg, #fff 50%, #2F80ED 50%);
+}
+}

@@ -1,0 +1,39 @@
+{
+    "name": "root10/project",
+    "description": "Test composer",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "fzaninotto/faker": "^1.8",
+        "gargron/fileupload": "^1.5",
+        "kreait/firebase-php": "^4.32",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "nilportugues/sql-query-builder": "^1.7",
+        "phpmailer/phpmailer": "^6.1",
+        "pusher/pusher-chatkit-server": "^1.6",
+        "pusher/pusher-php-server": "^4.0",
+        "rakit/validation": "^1.2",
+        "respect/validation": "^1.1",
+        "symfony/console": "^4.3",
+        "symfony/debug": "^4.3",
+        "symfony/dotenv": "^4.3",
+        "symfony/http-foundation": "^4.3",
+        "symfony/http-kernel": "^4.3",
+        "symfony/polyfill-ctype": "^1.12",
+        "symfony/var-dumper": "^4.3",
+        "twig/twig": "^2.11"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+           "Lib\\":"lib"
+        },
+        "files": [
+            "lib/func/init_func.php"
+        ] 
+    }
+}

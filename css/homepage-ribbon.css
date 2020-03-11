@@ -1,0 +1,63 @@
+        #signup-ribbon iframe
+        {
+            border-right: 1px solid rgb(179,13,13)!important;                     
+            border-bottom: 1px solid rgb(179,13,13)!important;
+        }
+        #ribbon-trigger  
+        {
+            height: 290px;
+            width: 85px;
+            top: calc(50vh - 115px);
+        }
+
+        #ribbon-trigger h6
+        {
+            width: 234px;
+            margin-bottom: 0px;
+            margin-left: -79px;
+            margin-top: 116px;
+            color: #fff;
+            transform: rotate(-90deg);      
+        }
+        @media(max-width:767px)
+        {
+            #ribbon-trigger 
+            {
+            height: 225px;
+            width: 65px;
+            top: calc(50vh - 65px);
+
+            }
+            #ribbon-trigger h6
+            {
+                font-size: 18px;
+                width: 224px;
+                margin-top: 95px;
+            }
+        }
+        #signup-ribbon
+        {
+
+            -webkit-transition: left 0.5s ease-out;
+            -moz-transition: left 0.5s ease-out;
+            -o-transition: left 0.5s ease-out;
+            transition: left 0.5s ease-out;
+
+        }
+
+        #signup-ribbon div.ctct-form-embed form.ctct-form-custom div.ctct-form-field
+        {
+            margin: 0 0 15px 0;
+        }
+
+        #signup-ribbon .ctct-form-footer, #signup-ribbon .ctct-gdpr-text
+        {
+            display:none;
+        }
+
+        .ctct-inline-form
+        {
+            height: 604px;
+            display: flex;
+            align-items: center;
+        }

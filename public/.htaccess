@@ -1,0 +1,58 @@
+#SetEnv HTTP_MY_VARIABLE "my value"
+
+#ErrorDocument 500 http://example.com/500/
+# or map them to one error document:
+# ErrorDocument 404 /pages/errors/error_redirect.php
+# ErrorDocument 500 /pages/errors/error_redirect.php
+
+
+#ErrorDocument 403 /index.php
+
+Options -Indexes
+IndexIgnore *
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+     RewriteCond %{HTTPS:Authorization} .
+     RewriteRule .* - [E=HTTPS_AUTHORIZATION:%{HTTPS:Authorization}]
+    
+    # Redirect Trailing Slashes If Not A Folder...
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule ^ index.php [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+
+    #RewriteRule ^(.+)$ index.php?url=$1 [NC,L,QSA]
+
+
+    <Files .htaccess>
+        Order allow,deny
+        Deny from all
+    </Files>
+
+    <Files ~ "\.json$">
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files ~ "\.lock$">
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files "lib">
+        Deny from all
+    </Files>
+    
+
+</IfModule>

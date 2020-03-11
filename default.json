@@ -1,0 +1,62 @@
+{
+    "website_name": "Test",
+    "site_url": "https:\/\/rafat97.000webhostapp.com\/Sahajjo\/my-framework\/",
+    "site_url_2": "http:\/\/localhost\/Sahajjo\/my-framework\/",
+    "site_dir": "\/storage\/ssd2\/185\/11427185\/public_html",
+    "stroage_path": "\/stroage",
+    "config_dir": "\/config",
+    "view_dir": "\/views",
+    "max_upload_file_size": "1M",
+    "upload_file_excepted": [
+        "image\/png",
+        "image\/jpg",
+        "image\/jpeg"
+    ],
+    "upload_file_excepted_ext": [
+        "png",
+        "jpg",
+        "jpeg"
+    ],
+    "db_info_3": {
+        "host_name": "remotemysql.com",
+        "user_name": "Ap7CbkWbEP",
+        "password": "MhI8IWOFdL",
+        "db_name": "Ap7CbkWbEP"
+    },
+    "db_info_2": {
+        "host_name": "localhost",
+        "user_name": "root",
+        "password": "",
+        "db_name": "test"
+    },
+    "db_info": {
+        "host_name": "localhost",
+        "user_name": "id10043053_rafat_haque1234",
+        "password": "Rafat1997",
+        "db_name": "id10043053_sahajjo"
+    },
+    "admin_user_info": {
+        "user_name": "admin",
+        "email": "admin@email.com",
+        "password": "1234"
+    },
+    "mail_setup_2": {
+        "driver_name": "smtp",
+        "host_name": "smtp.mailtrap.io",
+        "from_email": "sahajjo@sahajjo.ml",
+        "user_name": "342d440685e0fb",
+        "password": "4982cfbd5f4f1c",
+        "port": 587,
+        "SMTPSecure": "tls"
+    },
+    "mail_setup": {
+        "driver_name": "smtp",
+        "host_name": "smtp.mailgun.org",
+        "from_email": "sahajjo@sahajjo.ml",
+        "user_name": "postmaster@sandboxd3381ef9db1b44b49660f116c3b8f8bc.mailgun.org",
+        "password": "13655ffc182a7c3816c21ddb4103052b-af6c0cec-3dd9dd2b",
+        "port": 587,
+        "SMTPSecure": "tls"
+    },
+    "is_config": true
+}
